@@ -36,15 +36,15 @@ accordeons.forEach(el => {
 })
     
 //------
-let scrollValue = document.getElementsByClassName("dl-grid-block")[0];   
-let bot = document.getElementsByClassName("header-mobile")[0];    
+// let scrollValue = document.getElementsByClassName("dl-grid-block")[0];   
+// let bot = document.getElementsByClassName("header-mobile")[0];    
 		
-	 window.addEventListener('scroll', function() {
-	  if (bot.classList.contains("header-mobile--hide")) {
-	  scrollValue.style.top='0px'
-	}
-		else{
-		  scrollValue.style.top= bot.offsetHeight + 'px';
-		}
-	});    	
+// 	 window.addEventListener('scroll', function() {
+// 	  if (bot.classList.contains("header-mobile--hide")) {
+// 	  scrollValue.style.top='0px'
+// 	}
+// 		else{
+// 		  scrollValue.style.top= bot.offsetHeight + 'px';
+// 		}
+// 	});    	
 //------

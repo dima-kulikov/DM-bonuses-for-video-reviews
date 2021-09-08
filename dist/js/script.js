@@ -95,17 +95,17 @@ accordeons.forEach(el => {
 })
     
 //------
-let scrollValue = document.getElementsByClassName("dl-grid-block")[0];   
-let bot = document.getElementsByClassName("header-mobile")[0];    
+// let scrollValue = document.getElementsByClassName("dl-grid-block")[0];   
+// let bot = document.getElementsByClassName("header-mobile")[0];    
 		
-	 window.addEventListener('scroll', function() {
-	  if (bot.classList.contains("header-mobile--hide")) {
-	  scrollValue.style.top='0px'
-	}
-		else{
-		  scrollValue.style.top= bot.offsetHeight + 'px';
-		}
-	});    	
+// 	 window.addEventListener('scroll', function() {
+// 	  if (bot.classList.contains("header-mobile--hide")) {
+// 	  scrollValue.style.top='0px'
+// 	}
+// 		else{
+// 		  scrollValue.style.top= bot.offsetHeight + 'px';
+// 		}
+// 	});    	
 //------
 $(document).ready(function(){
 
@@ -167,3 +167,24 @@ $(document).ready(function(){
       ]
     });
         });
+const spaceHolder = document.querySelector('.space-holder');
+const horizontal = document.querySelector('.horizontal');
+spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+
+function calcDynamicHeight(ref) {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  const objectWidth = ref.scrollWidth;
+  return objectWidth - vw + vh;
+}
+
+window.addEventListener('scroll', () => {
+  const sticky = document.querySelector('.sticky');
+  horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+});
+
+window.addEventListener('resize', () => {
+  spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+});
+
+console.log('work')
