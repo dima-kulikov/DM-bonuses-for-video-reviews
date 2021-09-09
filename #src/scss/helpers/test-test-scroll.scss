@@ -19,6 +19,12 @@
     padding: 128px 16px;
     background-color: red;
   }
+  .size-section__big{
+    max-width: 1920px;
+    margin: 0px auto;
+    display: block;
+    // padding: 0px 15px;
+}
   
   .horizontal-container {
     position: relative;
@@ -32,7 +38,7 @@
     position: relative;
     width: 100%;
     padding:0;
-    background:green;
+    background:rgb(233, 166, 166);
   }
   
   .sticky {
@@ -48,7 +54,7 @@
     position: absolute;
     height: calc(100vh - 100px);
     will-change: transform;
-    background-color: blue;
+    background-color: rgb(233, 166, 166);
     // width:95%;
   }
   
@@ -65,19 +71,19 @@
   .sample-card {
     position: relative;
     height: 100%;
-    width: 71%;
-    background-color: white;
+    width: 76%;
+    background-color: rgb(233, 166, 166);
     margin-right: 5px;
     margin-top:0;
     margin-bottom:0;
     flex-shrink: 0;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: end;
   }
-  // .sample-card:last-child{
-  //   margin-right: 50%;   
-  // }
+  .sample-card:last-child{
+    justify-content: start;  
+  }
   .scrolling__block{
     margin: 10px 20px;
     display: flex;

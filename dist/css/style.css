@@ -1137,6 +1137,12 @@ body {
   background-color: red;
 }
 
+.size-section__big {
+  max-width: 1920px;
+  margin: 0px auto;
+  display: block;
+}
+
 .horizontal-container {
   position: relative;
   width: 100%;
@@ -1149,7 +1155,7 @@ body {
   position: relative;
   width: 100%;
   padding: 0;
-  background: green;
+  background: #e9a6a6;
 }
 
 .horizontal-container .sticky {
@@ -1166,7 +1172,7 @@ body {
   position: absolute;
   height: calc(100vh - 100px);
   will-change: transform;
-  background-color: blue;
+  background-color: #e9a6a6;
 }
 
 .horizontal-container .cards {
@@ -1191,8 +1197,8 @@ body {
 .horizontal-container .sample-card {
   position: relative;
   height: 100%;
-  width: 71%;
-  background-color: white;
+  width: 76%;
+  background-color: #e9a6a6;
   margin-right: 5px;
   margin-top: 0;
   margin-bottom: 0;
@@ -1201,12 +1207,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+
+.horizontal-container .sample-card:last-child {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .horizontal-container .scrolling__block {
