@@ -1167,7 +1167,6 @@ body {
   height: calc(100vh - 100px);
   will-change: transform;
   background-color: blue;
-  padding: 0;
 }
 
 .horizontal-container .cards {
@@ -1192,7 +1191,7 @@ body {
 .horizontal-container .sample-card {
   position: relative;
   height: 100%;
-  width: 75%;
+  width: 71%;
   background-color: white;
   margin-right: 5px;
   margin-top: 0;
@@ -1202,9 +1201,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;

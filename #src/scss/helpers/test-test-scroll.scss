@@ -49,7 +49,7 @@
     height: calc(100vh - 100px);
     will-change: transform;
     background-color: blue;
-    padding:0
+    // width:95%;
   }
   
   .cards {
@@ -65,19 +65,19 @@
   .sample-card {
     position: relative;
     height: 100%;
-    width: 75%;
+    width: 71%;
     background-color: white;
     margin-right: 5px;
     margin-top:0;
     margin-bottom:0;
     flex-shrink: 0;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: end;
   }
-//   .sample-card:last-child{
-//     width: 100%;   
-//   }
+  // .sample-card:last-child{
+  //   margin-right: 50%;   
+  // }
   .scrolling__block{
     margin: 10px 20px;
     display: flex;
