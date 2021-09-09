@@ -1137,18 +1137,18 @@ body {
   background-color: red;
 }
 
-.size-section__big {
-  max-width: 1920px;
-  margin: 0px auto;
-  display: block;
-}
-
 .horizontal-container {
   position: relative;
   width: 100%;
   min-height: 80vh;
   background: red;
   margin: 0;
+}
+
+.horizontal-container .size-section__big {
+  max-width: 1920px;
+  margin: 0px auto;
+  display: block;
 }
 
 .horizontal-container .space-holder {

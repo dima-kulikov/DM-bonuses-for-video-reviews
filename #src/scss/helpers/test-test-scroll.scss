@@ -19,12 +19,7 @@
     padding: 128px 16px;
     background-color: red;
   }
-  .size-section__big{
-    max-width: 1920px;
-    margin: 0px auto;
-    display: block;
-    // padding: 0px 15px;
-}
+
   
   .horizontal-container {
     position: relative;
@@ -33,7 +28,12 @@
     background:red;
     margin:0;
 
-  
+    .size-section__big{
+      max-width: 1920px;
+      margin: 0px auto;
+      display: block;
+      // padding: 0px 15px;
+  }
   .space-holder {
     position: relative;
     width: 100%;
